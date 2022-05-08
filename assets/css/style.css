@@ -7,11 +7,12 @@
     }
     html{
       font-family: 'Montserrat', sans-serif;
+      line-height: 2.0;
     }
     body{
       background-image: url(./NightSky.jpeg);
-      background-size:contain;
-      
+      background-size:cover;
+
     }
     
 /* ACTIVATIONS*/
@@ -150,16 +151,16 @@ img {
    text-align: center;
    text-transform: uppercase;
    font-size: small;
-   font-weight: bolder;
+   font-weight: lighter;
    padding: 30px;
    width: 90%;
    min-height: 400px;
    display: flex;
    align-items: center;
    border-radius: 20px;
-   color:black);
-   font-weight: 500;
-   line-height: 30px;  
+
+ 
+   
  }
 /* My Work*/
 
@@ -194,6 +195,8 @@ div.app{
   background-size: cover;
   width: 35%;
   border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 
@@ -209,7 +212,9 @@ text-align: center;
 width: 20em;
 height: 10%;
 color: goldenrod;
+flex-wrap: wrap;
 }
+
 
 /* CONTACT ME FOOTER*/
  footer {
@@ -218,13 +223,14 @@ color: goldenrod;
    text-decoration: none;
    background-color: whitesmoke;
    color: black;
-   padding: 40px 20px;
+   padding: 40px 41px;
   letter-spacing: 1px;
   justify-content: center;
   background-image: url(./Luna.JPG);
   background-size:cover;
   width: 100%;
-  height: 100px;
+  height: 125px;
+
  }
  
  
@@ -241,18 +247,21 @@ padding: 20px;
 align-content: top;
 font-size: large;
 width: 50%;
+
  }
 
-@media only screen and (max-width: 600px){
-  .topnav a {
-    float: none;
-    width: 100%;
-  }
-} 
 
-/* @media only screen and (max-width: 600px){
-  .topnav a {
-    float: none;
-    width: 100%;
+@media screen and (min-width: 600px){
+  body {
+    font-size: 12pt;
+    aspect-ratio: auto;
   }
-}  */
+}
+
+@media screen and (max-width: 756px){
+  body {
+    font-size: 7pt;
+    aspect-ratio: 30%;
+    float: none;
+  }
+}
